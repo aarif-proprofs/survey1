@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/articles", to: "articles#index"
   resources :articles
   devise_for :users, :controllers => { registrations: 'registrations'}
+  resources :books
 end
